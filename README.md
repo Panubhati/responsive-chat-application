@@ -18,8 +18,7 @@ A full-stack responsive real-time chat application built with **React**, **Fireb
 - **Deployment**: Vite (or CRA), Firebase Hosting / Netlify / Vercel
 
 ## 📸 Screenshots
+![Uploading Screenshot 2024-11-17 141810.png…]()
 
-_Add screenshots here if available._
 
-## 📂 Folder Structure
 
