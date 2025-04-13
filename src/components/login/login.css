@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.login {
+  width: 80%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  color: #fff;
+  animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.login .item h2 {
+  font-size: 1.8rem;
+  color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.login .item form {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login .item form input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #f0f0f0;
+  transition: 0.3s ease;
+}
+
+.login .item form input:focus {
+  outline: none;
+  border-color: #1f8ef1;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.login .item form label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #cfcfcf;
+  transition: 0.3s ease;
+}
+
+.login .item form label:hover {
+  color: #ffffff;
+}
+
+.login .item form label img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  transition: 0.3s ease;
+}
+
+.login .item form label:hover img {
+  transform: scale(1.1);
+}
+
+.login .item form button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #1f8ef1;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login .item form button:disabled {
+  background-color: #1f8ef180;
+  cursor: not-allowed;
+}
+
+.login .item form button:hover:not(:disabled) {
+  background-color: #1a73e8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login .separator {
+  width: 2px;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .login {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .login .separator {
+    display: none;
+  }
+}

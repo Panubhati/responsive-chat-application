@@ -1,0 +1,100 @@
+/* Base styling for the chat list container */
+.chatList {
+  flex: 1;
+  max-height: 80vh; /* Adjustable based on the page layout */
+  overflow-y: auto; /* Enables vertical scrolling */
+  background-color: #1e2a38; /* Subtle dark background */
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for depth */
+  color: #ffffff; /* White text for readability */
+  box-sizing: border-box;
+}
+
+/* Search bar styling */
+.search {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px; /* Spacing between the search bar and chat items */
+}
+
+.searchBar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: #324a5e; /* Slightly different shade for contrast */
+  border-radius: 10px;
+  padding: 5px 10px; /* Padding inside the input field */
+}
+
+.searchBar input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  flex: 1;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.searchBar img {
+  width: 18px;
+  height: 18px;
+}
+
+.add {
+  width: 30px;
+  height: 30px;
+  background-color: #3b5364; /* Button background */
+  padding: 5px;
+  border-radius: 50%; /* Circular button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add:hover {
+  background-color: #4e6a82; /* Lighter shade on hover */
+}
+
+/* Chat item styling */
+.item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px; /* Space between items */
+}
+
+.item:hover {
+  background-color: #2b3d4f; /* Slight highlight on hover */
+}
+
+.item img {
+  width: 50px; /* Fixed size for avatars */
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular avatar */
+  border: 2px solid #3b5364; /* Border for avatar */
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.texts span {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.texts p {
+  font-size: 14px;
+  color: #b0bec5; /* Subtle gray for secondary text */
+  margin: 5px 0 0 0;
+}
